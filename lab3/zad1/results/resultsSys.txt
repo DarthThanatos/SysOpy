@@ -1,0 +1,21 @@
+mother fork:    6.68 50000
+children fork:    1.26 50000
+children + mother fork:    7.94 50000
+mother vfork:    2.60 50000
+children vfork:    0.47 50000
+children + mother vfork:    3.07, 50000
+mother fclone:    6.02 50000
+children fclone:    1.11 50000
+children + mother fclone:    7.13 50000
+mother vclone:    2.20 50000
+children vclone:    0.45 50000
+children + mother vclone:    2.65 50000
+mother fork:    6.13 50000
+children fork:    1.07 50000
+children + mother fork:    7.20 50000
+mother fclone:    6.60 50000
+children fclone:    1.30 50000
+children + mother fclone:    7.90 50000
+mother vclone:    2.32 50000
+children vclone:    0.50 50000
+children + mother vclone:    2.82 50000

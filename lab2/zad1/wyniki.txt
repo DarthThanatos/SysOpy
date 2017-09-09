@@ -1,0 +1,91 @@
+Iteration no 1:
+
+sorting via sys fun for record size = 4
+sys time:    3.13
+user time:    0.35 (for 1500 records)
+
+
+sorting via lib fun for record size = 4
+sys time:    5.48
+user time:    1.27 (for 1500 records)
+------------------------------------------
+
+sorting via sys fun for record size = 512
+sys time:   14.60
+user time:    1.32 (for 3000 records)
+
+
+sorting via lib fun for record size = 512
+sys time:   23.58
+user time:    6.28 (for 3000 records)
+
+------------------------------------------
+
+sorting via sys fun for record size = 4096
+sys time:    4.75
+user time:    0.32 (for 1500 records)
+
+
+sorting via lib fun for record size = 4096
+sys time:    5.57
+user time:    1.11 (for 1500 records)
+
+------------------------------------------
+
+sorting via sys fun for record size = 8192
+sys time:    3.33
+user time:    0.13 (for 1000 records)
+
+
+sorting via lib fun for record size = 8192
+sys time:    3.82
+user time:    0.47 (for 1000 records)
+
+------------------------------------------
+==========================================
+Iteration no 2:
+
+sorting via sys fun for record size = 4
+sys time:    2.09
+user time:    0.20 (for 1200 records)
+
+
+sorting via lib fun for record size = 4
+sys time:    3.52
+user time:    0.82 (for 1200 records)
+------------------------------------------
+
+sorting via sys fun for record size = 512
+sys time:   10.00
+user time:    0.89 (for 2500 records)
+
+
+sorting via lib fun for record size = 512
+sys time:   16.18
+user time:    4.22 (for 2500 records)
+------------------------------------------
+sorting via sys fun for record size = 4096
+sys time:    6.54
+user time:    0.42 (for 1700 records)
+
+
+sorting via lib fun for record size = 4096
+sys time:    7.72
+user time:    1.41 (for 1700 records)
+------------------------------------------
+
+sorting via sys fun for record size = 8192
+sys time:    5.87
+user time:    0.31 (for 1300 records)
+
+
+sorting via lib fun for record size = 8192
+sys time:    6.60
+user time:    0.86 (for 1300 records)
+===========================================
+Wnioski:
+Testy pokazuja, ze sortowanie za pomoca funkcji
+bibliotecznych (fread, fwrite) jest dluzsze niz
+w przypadku sortowania przy pomocy funkcji systemowych
+(read, write)
+===========================================

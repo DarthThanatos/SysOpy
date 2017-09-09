@@ -1,0 +1,3 @@
+opcja trzecia: wykorzystanie biblioteki ladowanej dynamicznie.
+Moze okazac sie konieczne ustawienie zmiennej LD_LIBRARY_PATH
+ poprzez komende export LD_LIBRARY_PATH=.

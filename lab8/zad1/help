@@ -1,0 +1,27 @@
+===================================================================================================
+
+DIV_BY_ZERO - wariant 2b
+ASYNCH - asynchroniczne anulowanie
+SYNCH  - synchroniczne anulowanie
+DETACH - watki odlaczone
+SLEEP - nakaz watkom spac 50 sekund by dac czas na wklepanie kill -sig pid
+MAIN_BLOCKS - wariant 2a-2
+THREAD_UNSTANDARD_HANDLE - wariant 2a-3
+THREAD_BLOCKS - wariant 2a-4
+
+2a-1) make VAL="-DSYNCH -DSLEEP"
+2a-2) make VAL="-DSYNCH -DSLEEP -DMAIN_BLOCKS"
+2a-3) make VAL="-DSYNCH -DSLEEP -DTHREAD_UNSTANDARD_HANDLE"
+2a-4) make VAL="-DSYNCH [-DSLEEP] -DTHREAD_BLOCKS" 
+
+uwaga! wywolanie: ./record-search 5[threads-amount] 
+				  records [path-to-records] 
+				  4 [how_many_records-to-load-by-one-thread] 
+				  f [text-to-find]
+				  [10 - usr1; 15 - term; 19 - stop; 9 - kill ] - no-of-signal
+
+2a-5) make VAL="-DSYNCH [-DSLEEP] -DTHREAD_HANDLE_MAIN_SENDS"
+uwaga! podobnie jak wyzej
+2b) make VAR="-DSYNCH -DDIV_BY_ZERO"
+
+===================================================================================================

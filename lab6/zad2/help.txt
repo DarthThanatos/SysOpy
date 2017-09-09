@@ -1,0 +1,4 @@
+uruchomic dla 3 klientow
+liczba klientow wyspecyfikowana w common.h
+usage: ./server /Server
+		./client /Server

@@ -1,0 +1,13 @@
+2a) 
+1. po wyskalniu USR1 [kill -USR1 pid] wyswietlil sie komunikat: user defined signal 1, i nastapilo zatrzymanie calego programu wraz ze wszystkimi watkami; po KILL - to samo, komunikat "killed"; po TERM: terminated; po STOP: stopped.
+2. USR1 - zablokowany/zignorowany
+   STOP - zatrzymany razem ze wszystkimi watkami 
+   KILL - wszystko ubite
+   TERM - zablokowany/zignorowany
+3. USR1 i TERM - zostaly przechwycone przez glowny watek, KILL i STOP tradycyjnie nieuchwytne
+4. KILL i STOP ubijaja caly proces, natomiast TERM i USR1 sa blokowane przez watek, blad(?) w wysylaniu sygnalu. 
+5. -||-, TERM i USR1 przechwytywane i obslugiwane  - nastepuje wybudzenie ze sleepa wszystkich watkow.
+2b) Po wygenerowaniu watku ktorego jedynym zadaniem bylo dzielenie przez zero, 
+pozostale watki (wersja z synchronizacyjnym anulowaniem) robily dalej swoje zadania. Po tym jak glowny watek sprawdzil stany pozostalych watkow, wygenerowany zostal blad floating point exception (core dumped).
+Wersja systemu:
+Po wprowadzeniu polecenia uname -r: 4.3.5-300.fc23.x86_64
